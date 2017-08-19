@@ -13,7 +13,12 @@
         "infyomlabs/adminlte-templates": "5.4.x-dev",
         "infyomlabs/swagger-generator": "dev-master",
         "jlapp/swaggervel": "dev-master",
-        "doctrine/dbal": "~2.3"
+        "doctrine/dbal": "~2.3",
+        "spatie/laravel-medialibrary": "5.13.*",
+        "spatie/activitylog": "^2.4",
+        "james-heinrich/getid3": "^1.9",
+        "tymon/jwt-auth": "0.5.*",
+        "spatie/laravel-permission": "2.4.2"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

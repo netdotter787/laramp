@@ -183,7 +183,11 @@ return [
         Laracasts\Flash\FlashServiceProvider::class,
         Prettus\Repository\Providers\RepositoryServiceProvider::class,
         \InfyOm\Generator\InfyOmGeneratorServiceProvider::class,
-        \InfyOm\AdminLTETemplates\AdminLTETemplatesServiceProvider::class
+        \InfyOm\AdminLTETemplates\AdminLTETemplatesServiceProvider::class,
+        Spatie\MediaLibrary\MediaLibraryServiceProvider::class,
+        Spatie\Activitylog\ActivitylogServiceProvider::class,
+        Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
+        Spatie\Permission\PermissionServiceProvider::class
 
     ],
 
@@ -235,7 +239,8 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Form'      => Collective\Html\FormFacade::class,
         'Html'      => Collective\Html\HtmlFacade::class,
-        'Flash'     => Laracasts\Flash\Flash::class
+        'Flash'     => Laracasts\Flash\Flash::class,
+        'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class
     ],
 
 ];
