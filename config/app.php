@@ -243,4 +243,14 @@ return [
         'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class
     ],
 
+
+    //Laramp Table Names
+
+    /**
+     * Media directory handling table names
+     */
+    'media_handling' => [
+        'storage_systems_table_name' => 'storage_system',
+        'storage_paths_table_name' => 'storage_path'    
+    ]
 ];
