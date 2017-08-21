@@ -28,14 +28,6 @@ class InputFiles extends Migration
             $table->unsignedTinyInteger('status');
             $table->softDeletes();
             $table->nullableTimestamps();
-
-
-
-            $table->foreign('user_id')
-                ->references('id')
-                ->on('users')
-                ->onDelete('cascade');
-
         });
 
 
@@ -48,18 +40,6 @@ class InputFiles extends Migration
             $table->unsignedTinyInteger('status');
             $table->softDeletes();
             $table->nullableTimestamps();
-
-            $tableNames = config('app.media_handling');
-
-            $table->foreign('storage_system_id')
-                ->references('storage_system_id')
-                ->on($tableNames['storage_systems_table_name'])
-                ->onDelete('cascade');
-
-            $table->foreign('user_id')
-                ->references('id')
-                ->on('users')
-                ->onDelete('cascade');
         });
     }
 
